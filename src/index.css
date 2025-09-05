@@ -448,7 +448,6 @@ header {
   color: #fff;
 }
 
-* 📱 موبايل صغير */
 @media (max-width: 480px) {
  .services-slider {
     width:auto;
@@ -471,7 +470,6 @@ header {
   }
 }
 
-/* 📱 تابلت */
 @media (max-width: 768px) {
   .slider-content img {
     height: auto;
@@ -600,7 +598,6 @@ header {
 
 /**JoinUs End**/
 /** last Footer Start**/
-/* ===== Footer Styling ===== */
 .last-footer {
   background: #222;
   color: #fff;

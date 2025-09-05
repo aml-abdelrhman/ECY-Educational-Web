@@ -11,29 +11,18 @@ import LastFooter from './LastFooter';
 
 export default function App() {
   const loginRef = useRef();
-
-  // حالة المودال في Footer (Get Quote)
   const [activeFooterSection, setActiveFooterSection] = useState("");
-
-  // دالة لفتح مودال الاتصال في Footer
   const openFooterModal = (section) => setActiveFooterSection(section);
 
   return (
     <div>
-      {/* Header مع مودال تسجيل الدخول */}
       <Header loginRef={loginRef} />
       <LoginModal ref={loginRef} />
-
-      {/* الصفحة الرئيسية */}
       <Home openModal={openFooterModal} />
-
-      {/* باقي الأقسام */}
       <Courses />
       <ServicesSlider/>
       <Reviews />
       <JoinUsSimple />
-
-      {/* Footer + مودال الاتصال */}
       <LastFooter 
         activeSection={activeFooterSection} 
         setActiveSection={setActiveFooterSection} 

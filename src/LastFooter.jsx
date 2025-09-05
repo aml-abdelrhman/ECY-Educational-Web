@@ -37,7 +37,6 @@ function LastFooter({ activeSection, setActiveSection }) {
 
   return (
     <>
-      {/* Modal */}
       {activeSection && (
         <div className="modal-overlay" onClick={handleClose}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -46,7 +45,7 @@ function LastFooter({ activeSection, setActiveSection }) {
             {activeSection === "contact" && (
               <>
                 <h2>📩 Contact Us</h2>
-                <form className="contact-form" onSubmit={handleSubmit}>
+                <form className="contact-form" onSubmit={handleSubmit} >
                   <div className="form-group">
                     <label>Name:</label>
                     <input type="text" name="name" value={formData.name} onChange={handleChange} required />
@@ -62,6 +61,27 @@ function LastFooter({ activeSection, setActiveSection }) {
                   <button type="submit" className="send-btn">Send Message</button>
                 </form>
               </>
+            )}
+
+            {activeSection === "home" && (
+              <div>
+                <h2>🏠 Welcome to ECY Educational Website</h2>
+                <p>Explore our courses, resources, and latest educational updates.</p>
+              </div>
+            )}
+
+            {activeSection === "about" && (
+              <div>
+                <h2>ℹ️ About Us</h2>
+                <p>ECY Educational Website is dedicated to providing high-quality online education and resources for learners worldwide.</p>
+              </div>
+            )}
+
+            {activeSection === "services" && (
+              <div>
+                <h2>💼 Our Services</h2>
+                <p>We offer online courses, educational consulting, and interactive learning resources to help you achieve your goals.</p>
+              </div>
             )}
           </div>
         </div>
@@ -80,7 +100,7 @@ function LastFooter({ activeSection, setActiveSection }) {
             </ul>
           </div>
 
-          <div className="last-footer-contact">
+          <div className="last-footer-contact" id="contactForm">
             <h3>Contact Info</h3>
             <p><strong>Email:</strong> ECY2025@gmail.com</p>
             <p><strong>Phone:</strong> +20 123 456 7890</p>

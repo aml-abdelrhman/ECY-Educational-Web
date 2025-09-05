@@ -1,4 +1,3 @@
-// src/components/Card.jsx
 import React from "react";
 
 export default function Card({ img, title, description, color }) {

@@ -9,7 +9,7 @@ function Header({ loginRef }) {
           <li><a href="#home">Home</a></li>
           <li><a href="#courses">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#last-footer-contact">Contact</a></li>
+          <li><a href="#contactForm">Contact</a></li>
         </ul>
 
         <a href="#"  className="login"  onClick={(e) => { e.preventDefault(); loginRef.current.open(); }}>Login</a>

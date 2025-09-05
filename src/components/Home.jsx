@@ -13,12 +13,10 @@ function Home({ openModal }) {
           Stay connected, watch tutorials, and join our amazing community.
         </p>
 
-        {/* Get Quote يفتح مودال الاتصال */}
         <button className="btn btn-red" onClick={() => openModal("contact")}>
           Get Quote
         </button>
 
-        {/* Learn More يذهب إلى قسم الخدمات */}
         <a href="#services" className="btn btn-transparent">
           Learn More
         </a>

@@ -1,10 +1,8 @@
-// src/LoginModal.jsx
 import React, { useState, forwardRef, useImperativeHandle } from "react";
 
 const LoginModal = forwardRef((props, ref) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // نجعل الفانكشن متاحة للاستدعاء من بره
   useImperativeHandle(ref, () => ({
     open: () => setIsOpen(true),
     close: () => setIsOpen(false)
