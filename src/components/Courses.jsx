@@ -1,7 +1,8 @@
 import React from "react";
 import SectionHeader from "./SectionHeader";
-import CoursesData from "./CoursesData";
-import CourseCard from "./CourseCard";
+import CardData from "./CardData";
+import Card from "./Card";
+
 function Courses() {
   return (
     <section className="courses" id="courses">
@@ -12,11 +13,11 @@ function Courses() {
           color="#ff4d4f"
         />
 
-          <div className="card-container" >
-        {CoursesData.map((course) => (
-          <CourseCard key={course.id} {...course} />
-        ))}
-      </div>
+        <div className="card-container">
+          {CardData.map((course) => (
+            <Card key={course.id} {...course} />
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-import CoursesData from "./CoursesData";
 
 export default function CourseCard({
   img,
@@ -17,8 +16,7 @@ export default function CourseCard({
 }) {
   return (
     <div className="course-card" style={{ backgroundColor: color }} >
-    <img src={img} alt={title} className="course-img" />
-
+      <img src={img} alt={title} className="course-img" />
       <div className="course-body">
         <span className="course-department">{department}</span>
         <h3>{title}</h3>
