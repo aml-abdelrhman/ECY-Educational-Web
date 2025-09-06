@@ -1,7 +1,7 @@
 import React from "react";
 import SectionHeader from "./SectionHeader";
-import CardData from "./CardData";
-import Card from "./Card";
+import CoursesData from "./CoursesData";
+import CourseCard from "./CourseCard";
 
 function Courses() {
   return (
@@ -14,8 +14,8 @@ function Courses() {
         />
 
         <div className="card-container">
-          {CardData.map((course) => (
-            <Card key={course.id} {...course} />
+          {CoursesData.map((course) => (
+            <CourseCard key={course.id} {...course} />
           ))}
         </div>
       </div>
