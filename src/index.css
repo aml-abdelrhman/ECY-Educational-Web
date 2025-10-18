@@ -71,7 +71,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background: #0d1b2a; /* لون داكن أنيق */
+  background: #0d1b2a; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -168,7 +168,7 @@ header {
   .navbar ul {
     flex-direction: column;
     gap: 10px;
-    position: static; /* يخلي القايمة تحت بعض */
+    position: static; 
     font-size: 18px;
     margin-top: 10px;
   }
@@ -242,6 +242,7 @@ header {
 .home .btn-red {
   background-color: var(--red);
   color: white;
+  margin-bottom: 10px;
   
 }
 .home .btn-transparent {
@@ -361,7 +362,7 @@ header {
 /**Slider start**/
 .services-slider {
   max-width: 900px;  
-  width: 100%;       
+  width: 80%;       
   margin: 50px auto;
   position: relative;
   text-align: center;
@@ -369,6 +370,7 @@ header {
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
 }
 
 .slider-content img {
@@ -404,6 +406,7 @@ header {
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 50%;
+  z-index: 10;
 }
 
 .prev-btn:hover,
@@ -412,11 +415,11 @@ header {
 }
 
 .prev-btn {
-  left: -50px;
+  left: -60px;
 }
 
 .next-btn {
-  right: -50px;
+  right: -60px;
 }
 
 .slide-number {
@@ -450,14 +453,14 @@ header {
 
 @media (max-width: 480px) {
  .services-slider {
-    width:auto;
+    width:80%;
     margin: 20px auto;   
     padding: 10px;       
   }
 
   .slider-content img {
     height: auto;
-    max-height: 220px;   
+    max-height: 200px;   
   }
 
   .slider-content h3 { font-size: 1.3rem; }
@@ -467,17 +470,33 @@ header {
     padding: 0.3rem 0.6rem;
     left: 5px;
     right: 5px;
+    width: 3rem;
   }
 }
 
 @media (max-width: 768px) {
+    .services-slider {
+    max-width: 80%;
+    margin: 30px auto;
+    padding: 15px;
+  }
   .slider-content img {
     height: auto;
     max-height: 350px;
   }
   .slider-content h3 { font-size: 1.5rem; }
   .slider-content p { font-size: 1rem; line-height: 1.5; }
+    .prev-btn, .next-btn {
+    font-size: 1.2rem;
+    padding: 0.3rem 0.6rem;
+    width: 2rem;
+  }
+    .prev-btn { left: -40px; right: auto; }
+  .next-btn { right: -40px; left: auto; }
 }
+
+
+
 
 /**Slider end**/
 /**Reviews start**/
